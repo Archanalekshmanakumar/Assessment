@@ -1,0 +1,23 @@
+<div class="col-12 col-md-12">    
+    <div class="card">    
+      <div class="card-header"> 
+        <nav class="navbar navbar-dark bg-dark">
+            Parent Component 
+          </nav>   
+        
+          
+      </div>    
+         
+        <!-- <div class="order-tracking">     -->
+         <!-- <input name="yourname" type="text" [(ngModel)]="name" placeholder="Enter your name"/>    
+         <button type="button" (click)="submit()" class="btn-btn primary">Submit</button>    
+       -->
+         <h3>{{this.message}}</h3> 
+         <h4>{{this.member}}</h4>   
+        
+         <!-- <div>    
+            <button type="button" (click)="onClick()">Ok</button>    
+            </div>  -->
+    </div>    
+  </div>    
+  <app-child [Name]="sendToChild" (getResponse)="getResponse($event)"></app-child>  
